@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 from typing_extensions import Self
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -227,7 +227,7 @@ class Ui_MainWindow():
         
 
     def output_screen_prediction(self):        
-        #_translate = QtCore.QCoreApplication.translate
+        
         MSSubClass = self.MSSubClass_input_0.text()
         LotFrontage = self. LotFrontage_input_1.text()
         LotArea = self.LotArea_input_2.text()
@@ -238,6 +238,7 @@ class Ui_MainWindow():
         MassVnrArea = self.MassVnrArea_input_7.text()
         BsmtFinSF1 = self.BsmtFinSF1_input_8.text()
         BsmtFinSF2 = self.BsmtFinSF2_input_9.text()
+        
         user_input = []*10
         user_input.append(int(MSSubClass))
         user_input.append(int(LotFrontage))

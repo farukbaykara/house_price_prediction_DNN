@@ -21,19 +21,17 @@ from pylab import rcParams
 import matplotlib
 
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
 
-from sklearn.ensemble import IsolationForest
 
-import warnings
+
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
-from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
+
 
 from keras_tuner import HyperModel
 from keras_tuner.tuners import RandomSearch, Hyperband
-import IPython
+
 from tensorflow.keras.metrics import Metric 
 from keras_tuner import HyperModel
 from keras_tuner.tuners import Hyperband

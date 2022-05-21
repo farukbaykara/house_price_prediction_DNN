@@ -2,33 +2,26 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-import os
+
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import tensorflow as tf
-from tensorflow.python.client import device_lib
-
-
-import itertools
-
-
+#from tensorflow.python.client import device_lib
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pylab import rcParams
-import matplotlib
+
 
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
 
-from sklearn.ensemble import IsolationForest
 
-import warnings
+
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
-from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
+
 
 from keras_tuner import HyperModel
 from keras_tuner.tuners import RandomSearch, Hyperband
@@ -42,10 +35,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Lasso
 from sklearn.feature_selection import SelectFromModel
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = "99"
-device_lib.list_local_devices()
-import sys
-sys.path.insert(0, '..')
+
 
 from tensorflow.python.keras import Sequential
 from tensorflow.python.keras.layers import Convolution2D, Flatten, Dense
@@ -140,21 +130,7 @@ def predict_price(user_input,model_selection):
 
     test_data_ss= pd.DataFrame(ss.transform(samp_test_data))
 
-
-
-    # if(len(selected_feats)!= 265):
-    #     for i in range(266,len(selected_feats)+1):
-    #         test_data_ss.drop(i,axis =1,inplace = True)
-    #         break
-
-
     test_data_ss= test_data_ss[selected_feats]
-
-
-
-
-            
-
 
     normal_model = load_model("normal_model.h5")
     tuned_model = load_model("tuned_model.h5")

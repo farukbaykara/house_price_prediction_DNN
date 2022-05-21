@@ -1,0 +1,9 @@
+numpy
+pandas
+more-itertools
+scikit-learn
+keras==2.6.0
+matplotlib
+tk-tools==0.15.0
+tensorflow
+
