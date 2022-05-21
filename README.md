@@ -6,7 +6,7 @@ House Price Prediction application with neural network. It also has a GUI which 
 Go to your /home directory to install repo in it. It is important to be in **/home** directory.
 
 ```
-cd ~
+cd /home
 ```
 
 

@@ -54,8 +54,8 @@ from tensorflow.python.keras.optimizers import adam_v2
 
 
 
-train_data = pd.read_csv('/home/baykara/Kaggle/house_prices_prediction/data_set/train.csv')
-test_data = pd.read_csv('/home/baykara/Kaggle/house_prices_prediction/data_set/test.csv')
+train_data = pd.read_csv('/home/house_prices_prediction/data_set/train.csv')
+test_data = pd.read_csv('/home/house_prices_prediction/data_set/test.csv')
 train_data.head()
 
 # 1. Excluding columns which have majority as null

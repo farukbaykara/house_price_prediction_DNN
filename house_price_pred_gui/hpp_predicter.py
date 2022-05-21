@@ -73,9 +73,9 @@ def ohe_transform(x, ohe, nominal_cols):
 
 
 def predict_price(user_input,model_selection):
-    train_data = pd.read_csv('/home/baykara/Kaggle/house_prices_prediction/data_set/train.csv')
+    train_data = pd.read_csv('/home/house_prices_prediction/data_set/train.csv')
 
-    test_data = pd.read_csv('/home/baykara/Kaggle/house_prices_prediction/data_set/test.csv')
+    test_data = pd.read_csv('/home/house_prices_prediction/data_set/test.csv')
     
     x= train_data.iloc[:, 1:-1] # Dropping 'Id' and the Y feature
     y= train_data.iloc[:,-1]
