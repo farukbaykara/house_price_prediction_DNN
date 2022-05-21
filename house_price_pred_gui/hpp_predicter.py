@@ -63,7 +63,7 @@ def missing_val_imputation(x, ordinal_cols,nominal_cols,numeric_cols):
         x.loc[:,col]= x.loc[:,col].fillna(x.loc[:,col].mean())
 #         x.loc[:,col]= x.groupby("OverallQual")[col].transform(lambda grp:grp.fillna(np.mean(grp)))
 
-    print("All missing values are now imputed!\n",x.isnull().sum().sort_values(ascending=False))
+    #print("All missing values are now imputed!\n",x.isnull().sum().sort_values(ascending=False))
     
     return x
 
@@ -139,24 +139,22 @@ def predict_price(user_input,model_selection):
 
     test_data_ss= pd.DataFrame(ss.transform(samp_test_data))
 
-    print("secilen özellikler: " , len(selected_feats))
+
 
     # if(len(selected_feats)!= 265):
     #     for i in range(266,len(selected_feats)+1):
     #         test_data_ss.drop(i,axis =1,inplace = True)
     #         break
 
-    print(test_data_ss.shape)
+
     test_data_ss= test_data_ss[selected_feats]
 
-    print(test_data_ss.shape[1])
 
-    if(test_data_ss.shape[1]!= 265):
-        for i in range(266,test_data_ss.shape[1]+1):
-            del test_data_ss[i]
+
+
             
 
-    print(test_data_ss.shape)
+
     normal_model = load_model("normal_model.h5")
     tuned_model = load_model("tuned_model.h5")
     if(model_selection ==1):
