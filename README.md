@@ -6,7 +6,7 @@ House Price Prediction application with neural network. It also has a GUI which 
 Go to your desired workspace to install repo in it. Then open terminal and paste the below command.
 
 ```
-git clone git@github.com:farukbaykara/house_price_prediction_DNN.git
+git clone https://github.com/farukbaykara/house_price_prediction_DNN.git
 ```
 
 ## Requirements
