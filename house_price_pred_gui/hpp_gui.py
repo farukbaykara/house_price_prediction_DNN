@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from typing_extensions import Self
 from PyQt5 import QtCore, QtGui, QtWidgets
 from sklearn import model_selection
