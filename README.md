@@ -31,7 +31,7 @@ bash install.sh
 If all the requirements have been downloaded, the interface is ready to run. Run the codes below in order.
 
 ```
-cd house_price_pred_hui
+cd house_price_pred_gui
 ```
 ```
 python3 hpp_gui.py
