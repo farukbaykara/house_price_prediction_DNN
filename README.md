@@ -22,7 +22,9 @@ git clone git@github.com:farukbaykara/house_price_prediction_DNN.git
 ## Installation
 
 Requirements.txt and install.sh files have been created so that the requirements can be downloaded automatically. The bash script file will download the necessary libraries. Paste the code below into the terminal.
-
+```
+cd house_price_prediction_DNN
+```
 ```
 bash install.sh
 ```
