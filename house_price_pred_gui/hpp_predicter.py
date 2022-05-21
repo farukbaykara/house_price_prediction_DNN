@@ -76,9 +76,9 @@ def predict_price(user_input,model_selection):
 
 
 
-    train_data = pd.read_csv('/home/house_prices_prediction_DNN/data_set/train.csv')
+    train_data = pd.read_csv('../house_prices_prediction_DNN/data_set/train.csv')
 
-    test_data = pd.read_csv('/home/house_prices_prediction_DNN/data_set/test.csv')
+    test_data = pd.read_csv('../house_prices_prediction_DNN/data_set/test.csv')
 
     
     x= train_data.iloc[:, 1:-1] # Dropping 'Id' and the Y feature
