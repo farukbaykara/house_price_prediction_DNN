@@ -25,6 +25,9 @@ Requirements.txt and install.sh files have been created so that the requirements
 ```
 cd house_price_prediction_DNN
 ```
+
+İnstallation of all packages can take a while. 
+
 ```
 bash install.sh
 ```
@@ -38,3 +41,7 @@ cd house_price_pred_gui
 ```
 python3 hpp_gui.py
 ```
+## Using GUI
+
+After launching interface window, write suitable house features to the inputs. Then, press the Set Input Params button and select a model type. Then
+press the Predict button to see predicted house price. 
