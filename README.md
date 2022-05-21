@@ -13,7 +13,7 @@ cd /home
 Then open terminal and paste the below command.
 
 ```
-git clone https://github.com/farukbaykara/house_price_prediction_DNN.git
+sudo git clone https://github.com/farukbaykara/house_price_prediction_DNN.git
 ```
 
 ## Requirements
@@ -52,3 +52,14 @@ python3 hpp_gui.py
 
 After launching interface window, write suitable house features to the inputs. Then, press the Set Input Params button and select a model type. Then
 press the Predict button to see predicted house price. 
+
+
+## Removing Repo
+After you are done with app, use can remove the repo via below command.
+```
+cd /home
+```
+
+```
+sudo rm -r house_price_prediction_DNN
+```
