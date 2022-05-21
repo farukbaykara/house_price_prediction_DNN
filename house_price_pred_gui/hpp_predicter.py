@@ -73,9 +73,15 @@ def ohe_transform(x, ohe, nominal_cols):
 
 
 def predict_price(user_input,model_selection):
+<<<<<<< HEAD
     train_data = pd.read_csv('/home/house_prices_prediction/data_set/train.csv')
 
     test_data = pd.read_csv('/home/house_prices_prediction/data_set/test.csv')
+=======
+    train_data = pd.read_csv('/home/house_prices_prediction_DNN/data_set/train.csv')
+
+    test_data = pd.read_csv('/home/house_prices_prediction_DNN/data_set/test.csv')
+>>>>>>> 14e09eabbd75d6d8aa29518980fb327b7e32468b
     
     x= train_data.iloc[:, 1:-1] # Dropping 'Id' and the Y feature
     y= train_data.iloc[:,-1]
